@@ -1,33 +1,24 @@
-PROJECT 2: Turing Machine simulator
-=================================
+# Project 3: Turing Machine simulator
 
-Authors:
-Anup Bhattara
-Daniel Aguilar Carranza
+* Author: Anup Bhattarai, Daniel Aguilar Carranza
+* Class: CS361 Section 2
+* Semester: Fall 2025
 
----------------------------------
-1. PROJECT OVERVIEW
----------------------------------
+## Overview
 
-This project implements a deterministic bi-infinite Turing Machine simulator in Java.
-The simulator reads an encoded Turing Machine description and an input string from a file, initializes an infinitely extendable tape in both directions, and simulates the machine until it reaches the halting state (the state with the largest label).
+This Java application simulates a deterministic bi-infinite Turing Machine. 
+The program reads an encoded Turing Machine description and input string from 
+a file, simulates the machine's execution until it reaches the halting state, 
+and outputs the contents of all visited tape cells to stdout.
 
-At the end of the simulation, the program prints all visited tape cells, in order, to stdout.
+## Compiling and Using
 
-The simulator is designed for both correctness and performance, as required by the project rubric and the provided large-scale test files.
-The core functionalities implemented are:
+To compile, execute the following command in the main project directory:
+```
+$ javac tm/*.java
+```
 
-
----------------------------------
-2. COMPILATION INSTRUCTIONS
----------------------------------
-
-rm *.class
-javac tm/*.java
-
-
----------------------------------
-3. EXECUTION INSTRUCTIONS
----------------------------------
-
-java tm.TMSimulator <inputfile>
+Run the compiled class with the command:
+```
+$ java tm.TMSimulator <input_file>
+```
